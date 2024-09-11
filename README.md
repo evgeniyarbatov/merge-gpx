@@ -1,10 +1,6 @@
 # Merge GPX Files
 
-GPS location recorded with a watch tends to be lower accuracy than the one recorded with a phone. 
-
-The phone does not record heart rate and cadence while the watch does. 
-
-Solution? Combine GPX files created with phone and watch based on common timestamp.
+GPS location recorded with a watch has lower accuracy than the one recorded with a phone. The phone does not record heart rate / power / cadence. Solution? Combine GPX files created with the phone and watch based on timestamps.
 
 ## Tools
 
@@ -13,13 +9,13 @@ Solution? Combine GPX files created with phone and watch based on common timesta
 
 ## Run
 
+Download GPX from your watch.
+
 Download phone GPX traces from Google Drive:
 
 ```
 make
 ```
-
-Download GPX from your watch.
 
 Merge:
 
