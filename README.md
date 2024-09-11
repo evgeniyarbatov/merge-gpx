@@ -13,9 +13,25 @@ Solution? Combine GPX files created with phone and watch based on common timesta
 
 ## Run
 
+Download phone GPX traces from Google Drive:
+
+```
+make
+```
+
+Download GPX from your watch.
+
+Merge:
+
 ```
 python3 merge.py \
-traces/osm-upload5693156463216149905.gpx # GPX file from the phone
-~/Downloads/Night_Run\ \(1\).gpx # GPX file from watch
-~/Downloads/Fixed_Night_Run.gpx # Merged GPX file
+traces/osm-upload5693156463216149905.gpx \
+~/Downloads/Night_Run\ \(1\).gpx \
+~/Downloads/Fixed_Night_Run.gpx
 ```
+
+where
+
+- `traces/osm-upload5693156463216149905.gpx`: GPX file from the phone
+- `~/Downloads/Night_Run\ \(1\).gpx`: GPX file from watch
+- `~/Downloads/Fixed_Night_Run.gpx`: merged GPX file
